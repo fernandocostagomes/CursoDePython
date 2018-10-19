@@ -28,7 +28,7 @@ print('O dobro desse número é: {}, o triplo é: {}, e sua raiz quadrada é: {}
 '''
 
 nota1 = int(input('Digite a primeira nota: '))
-nota2 = int(input('Digite a primeira nota: '))
+nota2 = int(input('Digite a segunda nota: '))
 media = ((nota1 + nota2) / 2)
 print('Nota 1: {} -- Nota 2: {} = Média: {}'.format(nota1, nota2, media))
 
@@ -38,5 +38,22 @@ print('Nota 1: {} -- Nota 2: {} = Média: {}'.format(nota1, nota2, media))
 tamanho = float(input('Digite o tamanho em metros: '))
 cm = (tamanho * 100)
 mm = (tamanho * 1000)
-print('O tamanho: {} em Centimetros é: {} e em Milimetros é: {}'.format(tamanho, cm, mm))
+print('O tamanho: {}m em Centimetros é: {}cm e em Milimetros é: {}mm'.format(tamanho, cm, mm))
+
+'''
+    O usuario digita um numero e vc digita a tabuada dele
+'''
+numeroTab = int(input('Digite um numero para sua tabuada: '))
+contador = 1
+while (contador <=10):
+    print('{} x {} = {}'.format(numeroTab, contador, numeroTab*contador) )
+    contador = contador +1
+
+'''
+    Solicite que o usuario digite quanto ele tem na carteira
+    Depois exiba quantos dolares ela possui, usando a conversão U$ 1,00 = R$3,33
+'''
+quantia = float(input('Digite quanto você possui na carteira: '))
+print('Você possui: {} reais, o que equivale a {} dolares'.format(quantia, quantia/3,33))
+
 
