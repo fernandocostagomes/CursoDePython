@@ -54,6 +54,23 @@ while (contador <=10):
     Depois exiba quantos dolares ela possui, usando a conversão U$ 1,00 = R$3,33
 '''
 quantia = float(input('Digite quanto você possui na carteira: '))
-print('Você possui: {} reais, o que equivale a {} dolares'.format(quantia, quantia/3,33))
+print('Você possui: {} reais, o que equivale a {:.2f} dolares'.format(quantia, quantia/3,33))
+
+'''
+    Solicite o tamanho da largura e da altura da parede
+    Depois exiba a área e a quantidade de tinta para pintá-la.
+    Considerando que 1 litro de tinta, pinta uma área de 3m2
+'''
+largura = float(input('Digite a largura da parede: '))
+altura = float(input('Digite a altura da parede: '))
+
+print('A área dessa parede é de: {:.2f}m² e é necessário {:.2f} litros de tinta para pintá-la.'.format(largura*altura, (largura*altura)/3))
+
+'''
+    Solicite o valor do produto ao usuario;
+    Devolva o valor com 10% de desconto.
+'''
+valorTotal = float(input('Digite o valor do produto: '))
+print('O valor do produto com 10% de desconto é: R$ {:.2f}.'.format(valorTotal - 10 * (valorTotal/100)))
 
 
