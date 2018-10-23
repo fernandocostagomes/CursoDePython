@@ -5,6 +5,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.idea/workspace.xml
 
 # C extensions
 *.so
@@ -127,6 +128,8 @@ dmypy.json
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
+
+
 
 
 # End of https://www.gitignore.io/api/python
