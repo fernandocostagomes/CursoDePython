@@ -36,8 +36,10 @@ import pygame
 print('Aperte enter para escutar uma música:')
 input('')
 try:
-    pygame.mixer.music.load(self'Spies.mp3')
-    pygame.mixer.music.play(0)
+    pygame.init()
+    pygame.mixer.music.load('musica.mp3')
+    pygame.mixer.music.play()
+    pygame.event.wait()
 except Exception:
     pygame.mixer.music.load('welcome.mp3')
     pygame.mixer.music.play()
