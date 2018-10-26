@@ -9,8 +9,8 @@ Quantas letras possui o primeiro nome?
 '''
 
 nomeCompleto = input('Digite o seu nome completo: ')
-print('O nome em letras maisculas: {}'.format(str.lower(nomeCompleto)))
-print('O nome em letras minusculas: {}'.format(str.upper(nomeCompleto)))
+print('O nome em letras minusculas: {}'.format(str.lower(nomeCompleto)))
+print('O nome em letras maiusculas: {}'.format(str.upper(nomeCompleto)))
 print('O total de letras do nome é: {}'.format(len(nomeCompleto.replace(" ",""))))
 nomeSeparado = nomeCompleto.split()
 print('O tamanho do primeiro nome: {}'.format(len(nomeSeparado[0])))
